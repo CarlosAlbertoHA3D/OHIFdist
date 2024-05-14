@@ -1,0 +1,16 @@
+{
+  "rewrites": [{ "source": "*", "destination": "index.html" }],
+  "headers": [
+    {
+      "source": "**/*",
+      "headers": [
+        { "key": "Cross-Origin-Embedder-Policy", "value": "require-corp" },
+        { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" },
+        { "key": "Access-Control-Allow-Origin", "value": "http://localhost:5173/" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "X-Requested-With, Content-Type, Accept, Origin, Authorization" },
+        { "key": "Access-Control-Allow-Credentials", "value": "true" }
+      ]
+    }
+  ]
+}
